@@ -1,0 +1,82 @@
+# 이 파일이 /cv/ 페이지를 생성합니다. 항목을 지우거나 추가해도 됩니다.
+cv:
+  name: 이현창 (Hyunchang Lee)
+  label: 국립순천대학교 우주항공공학과 부교수
+  email: leehc53@gmail.com
+  location: 전남 순천시
+  image: ""
+  summary: >
+    레이저 진단기법을 이용한 액체추진시스템(스크램젯, 항공 가스터빈, 액체로켓)의
+    분무 계측 및 인젝터 성능평가를 연구합니다.
+
+  social_networks:
+    - network: GitHub
+      username: USERNAME
+
+  sections:
+    학력:
+      - institution: ○○대학교
+        location: 대한민국
+        area: 항공우주공학
+        studyType: 공학박사
+        start_date: 20XX
+        end_date: 20XX
+        highlights:
+          - "학위논문: ○○○"
+
+      - institution: ○○대학교
+        location: 대한민국
+        area: 항공우주공학
+        studyType: 공학석사
+        start_date: 20XX
+        end_date: 20XX
+
+    경력:
+      - company: 국립순천대학교
+        position: 부교수
+        location: 전남 순천
+        start_date: 20XX
+        end_date: present
+        summary: 우주항공공학과
+        highlights:
+          - 레이저계측·추진연구실 운영
+          - 학부/대학원 강의 및 연구 지도
+
+      - company: ○○연구원
+        position: 선임연구원
+        location: 대한민국
+        start_date: 20XX
+        end_date: 20XX
+
+    연구과제:
+      - name: 우주항공용 적층제조 인젝터 표면 내마모성 향상 연구
+        summary: RISE사업 산학공동과제 (연구책임자)
+        start_date: 20XX
+        end_date: 20XX
+
+    수상:
+      - title: ○○○ 우수논문상
+        date: 20XX
+        awarder: 한국추진공학회
+
+    학회활동:
+      - name: 한국추진공학회
+        summary: "정회원"
+      - name: 한국항공우주학회
+        summary: "정회원"
+
+    강의:
+      - name: 열역학
+        summary: "학부"
+      - name: 추진공학
+        summary: "학부"
+      - name: 연소 및 분무계측 특론
+        summary: "대학원"
+
+    연구분야:
+      - name: 레이저 진단기법
+        icon: fa-solid fa-tag
+        keywords: "PLIF, Mie scattering, shadowgraphy, PDPA"
+      - name: 액체추진시스템
+        icon: fa-solid fa-tag
+        keywords: "스크램젯, 항공 가스터빈, 액체로켓, 인젝터"

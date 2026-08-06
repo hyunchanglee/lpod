@@ -1,0 +1,17 @@
+# papers.bib 의 abbr 필드에 쓴 약칭과 여기 key 를 맞추면
+# 논문 목록의 배지에 색상과 링크가 적용됩니다.
+
+"JPP":
+  url: https://arc.aiaa.org/journal/jpp
+  color: "#00369f"
+
+"CNF":
+  url: https://www.sciencedirect.com/journal/combustion-and-flame
+  color: "#9f3600"
+
+"KSPE":
+  url: https://www.kspe.or.kr
+  color: "#009f36"
+
+"학술대회":
+  color: "#5f5e5a"

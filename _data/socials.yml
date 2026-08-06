@@ -1,0 +1,10 @@
+# 사용하지 않는 항목은 앞에 # 을 붙여 주석 처리하면 아이콘이 사라집니다.
+cv_pdf: # 이력서 PDF 경로 (예: /assets/pdf/cv.pdf)
+email: leehc53@gmail.com
+scholar_userid: # Google Scholar 프로필 URL 의 user= 뒤 문자열
+# orcid_id:
+# researchgate_profile:
+# github_username:
+# linkedin_username:
+# youtube_id:
+rss_icon: true
