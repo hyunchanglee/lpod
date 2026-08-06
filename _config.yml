@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: 레이저계측·추진연구실 # 사이트 상단 좌측에 표시될 이름 (수정하세요)
+title: 액체추진및진단연구실 # 사이트 상단 좌측에 표시될 이름 (수정하세요)
 first_name: Hyunchang
 middle_name:
 last_name: Lee
@@ -20,8 +20,8 @@ lang: ko # 사이트 언어
 icon: 🔬 # favicon 이모지
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
-url: https://USERNAME.github.io # ← 실제 GitHub 계정명 또는 조직명 (배포-가이드.md 1-1절 참고)
-baseurl: "" # 저장소명이 "계정명.github.io" 이면 빈칸, 아니면 "/저장소명"
+url: https://hyunchanglee.github.io # ← 실제 GitHub 계정명 또는 조직명 (배포-가이드.md 1-1절 참고)
+baseurl: "/lpod" # 저장소명이 "계정명.github.io" 이면 빈칸, 아니면 "/저장소명"
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
