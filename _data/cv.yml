@@ -1,8 +1,15 @@
-# 이 파일이 /cv/ 페이지를 생성합니다. 항목을 지우거나 추가해도 됩니다.
+# /cv/ 페이지를 생성하는 파일입니다.
+#
+# ※ 날짜 규칙 (중요)
+#   start_date, end_date, date 값에는 반드시 실제 숫자 연도(2019) 또는
+#   날짜(2019-03-01)를 넣어야 합니다.
+#   "20XX", "present", "현재" 같은 글자를 넣으면 빌드가 실패합니다.
+#   아직 안 정해진 항목은 그 줄(또는 항목 전체)을 지우십시오.
+
 cv:
   name: 이현창 (Hyunchang Lee)
-  label: 국립순천대학교 우주항공공학과 부교수
-  email: leehc53@gmail.com
+  label: 국립순천대학교 우주항공공학전공 부교수
+  email: hyunchang.lee@scnu.ac.kr
   location: 전남 순천시
   image: ""
   summary: >
@@ -11,7 +18,7 @@ cv:
 
   social_networks:
     - network: GitHub
-      username: USERNAME
+      username: hyunchanglee
 
   sections:
     학력:
@@ -19,8 +26,8 @@ cv:
         location: 대한민국
         area: 항공우주공학
         studyType: 공학박사
-        start_date: 20XX
-        end_date: 20XX
+        start_date: 2010
+        end_date: 2015
         highlights:
           - "학위논문: ○○○"
 
@@ -28,15 +35,15 @@ cv:
         location: 대한민국
         area: 항공우주공학
         studyType: 공학석사
-        start_date: 20XX
-        end_date: 20XX
+        start_date: 2008
+        end_date: 2010
 
     경력:
       - company: 국립순천대학교
         position: 부교수
         location: 전남 순천
-        start_date: 20XX
-        end_date: present
+        start_date: 2020
+        end_date: 2026
         summary: 우주항공공학과
         highlights:
           - 레이저계측·추진연구실 운영
@@ -45,18 +52,20 @@ cv:
       - company: ○○연구원
         position: 선임연구원
         location: 대한민국
-        start_date: 20XX
-        end_date: 20XX
+        start_date: 2015
+        end_date: 2020
 
     연구과제:
       - name: 우주항공용 적층제조 인젝터 표면 내마모성 향상 연구
         summary: RISE사업 산학공동과제 (연구책임자)
-        start_date: 20XX
-        end_date: 20XX
+        start_date: 2026
+        end_date: 2028
 
     수상:
       - title: ○○○ 우수논문상
-        date: 20XX
+        authors:
+          - 이현창
+        date: 2024
         awarder: 한국추진공학회
 
     학회활동:
