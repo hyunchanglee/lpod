@@ -1,0 +1,140 @@
+<!DOCTYPE html> <html lang="ko"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 액적 크기·속도 계측 | 액체추진및진단연구실 </title> <meta name="author" content="Hyunchang Lee"> <meta name="description" content="PDPA 기반 액적경 분포 및 미립화 성능 정량화"> <meta name="keywords" content="레이저진단, 분무계측, 인젝터, 액체추진, 스크램젯, 가스터빈, 액체로켓, PLIF, PDPA, laser diagnostics, spray, injector"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/lpod/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/lpod/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%94%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/lpod/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://hyunchanglee.github.io/lpod/projects/2_droplet_sizing/"> <script src="/lpod/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/lpod/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/lpod/"> 액체추진및진단연구실 </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/lpod/">연구실 소개 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/research/">연구분야 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/publications/">논문 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/people/">구성원 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/facilities/">실험장비 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/news/">소식 </a> </li> <li class="nav-item "> <a class="nav-link" href="/lpod/cv/">이력 </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">액적 크기·속도 계측</h1> <p class="post-description">PDPA 기반 액적경 분포 및 미립화 성능 정량화</p> </header> <article> <p>미립화 성능은 연소 효율과 배출가스에 직접 영향을 미칩니다. <strong>PDPA(Phase Doppler Particle Analyzer)</strong> 를 이용하여 개별 액적의 크기와 속도를 동시에 측정하고, 공간 분포를 정량화합니다.</p> <h5 id="산출-지표">산출 지표</h5> <ul> <li> <strong>SMD (Sauter Mean Diameter, D32)</strong> — 미립화 성능의 대표 지표</li> <li>D10, D30, DV90 등 대표 직경 및 액적경 분포(PDF)</li> <li>액적 축방향/반경방향 속도 분포</li> <li>체적 유속(volume flux) 분포</li> </ul> <h5 id="활용">활용</h5> <p>인젝터 형상 인자(오리피스 직경, 스월 강도, 리세스 길이 등)와 분사 조건(차압, 배압, 액체 물성)이 SMD에 미치는 영향을 정리하여 설계 상관식을 도출합니다.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hyunchang Lee. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/lpod/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/lpod/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/lpod/assets/al_math/js/mathjax-setup.js"></script> <script src="/lpod/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/lpod/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/lpod/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/lpod/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/lpod/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/lpod/assets/al_img_tools/js/zoom.js"></script> <script defer src="/lpod/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/lpod/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/lpod/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-연구실-소개",
+    title: "연구실 소개",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/lpod/";
+    },
+  },{id: "nav-연구분야",
+          title: "연구분야",
+          description: "레이저 진단기법 기반 분무 계측과 인젝터 성능평가를 중심으로 연구를 수행합니다.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/research/";
+          },
+        },{id: "nav-논문",
+          title: "논문",
+          description: "연도별 학술지 논문 및 학술대회 발표 목록입니다.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/publications/";
+          },
+        },{id: "nav-구성원",
+          title: "구성원",
+          description: "레이저계측·추진연구실 구성원",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/people/";
+          },
+        },{id: "nav-실험장비",
+          title: "실험장비",
+          description: "연구실 보유 계측 장비 및 시험 설비",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/facilities/";
+          },
+        },{id: "nav-소식",
+          title: "소식",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/news/";
+          },
+        },{id: "nav-이력",
+          title: "이력",
+          description: "학력, 경력, 수상, 학회 활동",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lpod/cv/";
+          },
+        },{id: "news-2026학년도-신입-대학원생-학생이-연구실에-합류했습니다",
+          title: '2026학년도 신입 대학원생 ○○○, ○○○ 학생이 연구실에 합류했습니다.',
+          description: "",
+          section: "News",},{id: "news-한국추진공학회-2026년도-춘계학술대회에서-연구-결과-2편을-발표했습니다",
+          title: '한국추진공학회 2026년도 춘계학술대회에서 연구 결과 2편을 발표했습니다.',
+          description: "",
+          section: "News",},{id: "news-rise사업-산학공동과제-선정",
+          title: 'RISE사업 산학공동과제 선정',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/lpod/news/2026-07-01-project/";
+            },},{id: "projects-레이저-분무-가시화",
+          title: '레이저 분무 가시화',
+          description: "PLIF · Mie scattering · shadowgraphy를 이용한 분무 구조 계측",
+          section: "Projects",handler: () => {
+              window.location.href = "/lpod/projects/1_spray_imaging/";
+            },},{id: "projects-액적-크기-속도-계측",
+          title: '액적 크기·속도 계측',
+          description: "PDPA 기반 액적경 분포 및 미립화 성능 정량화",
+          section: "Projects",handler: () => {
+              window.location.href = "/lpod/projects/2_droplet_sizing/";
+            },},{id: "projects-인젝터-성능평가",
+          title: '인젝터 성능평가',
+          description: "스크램젯 · 항공 가스터빈 · 액체로켓 인젝터",
+          section: "Projects",handler: () => {
+              window.location.href = "/lpod/projects/3_injector/";
+            },},{id: "projects-적층제조-인젝터-표면-특성",
+          title: '적층제조 인젝터 표면 특성',
+          description: "AM 인젝터의 표면조도·내마모성이 분무 성능에 미치는 영향",
+          section: "Projects",handler: () => {
+              window.location.href = "/lpod/projects/4_am_injector/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%68%79%75%6E%63%68%61%6E%67.%6C%65%65@%73%63%6E%75.%61%63.%6B%72", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/lpod/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/lpod/assets/al_search/js/shortcut-key.js"></script> </body> </html>
