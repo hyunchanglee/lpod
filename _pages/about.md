@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>공과대학 ○○호</p>
+        <p>D2호관 114호실</p>
     <p>전남 순천시 중앙로 255</p>
-    <p>Tel. 061-750-0000</p>
+        <p>Tel. 061-750-3823</p>
 
 selected_papers: true
 social: true
