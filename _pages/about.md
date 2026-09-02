@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-        <p>D2호관 114호실</p>
+    <p>D2호관 114호실</p>
     <p>전남 순천시 중앙로 255</p>
-        <p>Tel. 061-750-3823</p>
+    <p>Tel. 061-750-3823</p>
 
 selected_papers: true
 social: true
