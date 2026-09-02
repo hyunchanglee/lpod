@@ -2,11 +2,11 @@
 layout: about
 title: 연구실 소개
 permalink: /
-subtitle: 국립순천대학교 <a href='https://www.scnu.ac.kr'>우주항공공학과</a> · 레이저계측·추진연구실 (LDPL)
+subtitle: 순천대학교 <a href='https://www.scnu.ac.kr'>기계우주항공공학전공</a> · Liquid Propulsion Optical Diagnostics (LPOD)
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: LPOD_logo.png
   image_circular: false
   more_info: >
     <p>D2호관 114호실</p>
