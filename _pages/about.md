@@ -5,7 +5,7 @@ permalink: /
 subtitle:  Liquid Propulsion Optical Diagnostics (LPOD)</n> 순천대학교<a href='https://www.scnu.ac.kr'> 기계우주항공공학전공
 
 profile:
-  align: right
+  align: left
   image: LPOD_logo.png
   image_circular: false
   
@@ -13,7 +13,7 @@ selected_papers: false
 social: false
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
@@ -30,4 +30,7 @@ latest_posts:
 - 인젝터 형상 인자와 분무 특성의 상관관계 도출
 - 적층제조(AM) 인젝터의 표면 특성이 분무 성능에 미치는 영향 평가
 
-레이저 광학계 구성부터 신호 처리·데이터 분석까지 전 과정을 연구실 내에서 수행하며, 계측 결과는 실제 추진기관 개발에 필요한 설계 데이터로 제공됩니다.
+레이저 광학계 구성부터 신호 처리·데이터 분석까지 전 과정을 연구실 내에서 수행하며, 실제 추진기관 개발 및 성능개선을 목표로 합니다.
+
+주소: 전남광주통합특별시 순천시 중앙로 255 공학1호관(D2) 114호실
+email: hyunchang.lee@scnu.ac.kr
